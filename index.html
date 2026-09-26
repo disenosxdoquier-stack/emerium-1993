@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Emerium 1993 — Joyería en oro 18K y esmeraldas colombianas</title>
+  <meta name="description" content="Joyería en oro de 18K y esmeraldas colombianas desde Medellín. Piezas con intención y asesoría privada por WhatsApp.">
+  <meta name="theme-color" content="#06100D">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Emerium 1993 — No llevas una joya. Llevas una intención.">
+  <meta property="og:description" content="Oro de 18K y esmeraldas colombianas convertidos en piezas que refuerzan lo que ya existe en ti.">
+  <meta property="og:image" content="assets/brand/og-image.jpg">
+
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Italiana&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <script>
+    /* Activa las animaciones de entrada. Si la página no logra cargar
+       (por ejemplo, abierta con doble clic como archivo), muestra todo sin animar. */
+    (function () {
+      var root = document.documentElement;
+      root.classList.add("js");
+      setTimeout(function () {
+        if (!root.classList.contains("app-loaded")) root.classList.remove("js");
+      }, 3000);
+      if (location.protocol === "file:") {
+        window.addEventListener("DOMContentLoaded", function () {
+          var n = document.createElement("p");
+          n.className = "file-notice";
+          n.textContent = "Para ver la landing completa, ábrela con un servidor local (ver README.md → \"Cómo visualizar\"). Abierta con doble clic, el navegador bloquea el catálogo.";
+          document.body.prepend(n);
+        });
+      }
+    })();
+  </script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="wordmark" href="#inicio" aria-label="Emerium 1993 — inicio">
+        <span class="wordmark__name" data-content="brand.name">Emerium</span>
+        <span class="wordmark__year" data-content="brand.year">1993</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Principal">
+        <ul class="site-nav__list">
+          <li><a href="#colecciones">Colecciones</a></li>
+          <li><a href="#piezas">Piezas</a></li>
+          <li><a href="#esencia">La marca</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span class="visually-hidden">Abrir menú</span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <nav aria-label="Menú móvil">
+      <ul class="mobile-menu__list">
+        <li><a href="#colecciones" data-menu-link><span>01</span>Colecciones</a></li>
+        <li><a href="#piezas" data-menu-link><span>02</span>Piezas</a></li>
+        <li><a href="#esencia" data-menu-link><span>03</span>La marca</a></li>
+        <li><a href="#contacto" data-menu-link><span>04</span>Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary mobile-menu__cta" data-whatsapp data-content="content.floating.label">Asesoría privada</a>
+    <p class="mobile-menu__tagline" data-content="brand.tagline"></p>
+  </div>
+
+  <main id="contenido">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--emerald hero__eyebrow" data-content="content.hero.eyebrow"></p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line" data-content="content.hero.titleLead"></span>
+            <span class="hero__line hero__line--accent" data-content="content.hero.titleAccent"></span>
+          </h1>
+          <p class="hero__text" data-content="content.hero.text"></p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#piezas" data-content="content.hero.primaryCta"></a>
+            <a class="btn btn--ghost" href="#esencia" data-content="content.hero.secondaryCta"></a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <svg class="orbits" viewBox="0 0 800 800" aria-hidden="true">
+            <g transform="rotate(-14 400 400)">
+              <ellipse class="orbit orbit--1" cx="400" cy="400" rx="390" ry="150" />
+              <circle class="orbit-dot" r="3">
+                <animateMotion dur="26s" repeatCount="indefinite" path="M790,400 A390,150 0 1,1 10,400 A390,150 0 1,1 790,400" />
+              </circle>
+            </g>
+            <ellipse class="orbit orbit--2" cx="400" cy="400" rx="330" ry="120" />
+          </svg>
+
+          <figure class="arch" data-parallax>
+            <div class="arch__frame">
+              <img class="arch__img" data-src="content.hero.image" data-alt="content.hero.imageAlt" alt="" width="1100" height="1568" fetchpriority="high">
+              <div class="arch__shade" aria-hidden="true"></div>
+              <svg class="gem" viewBox="0 0 120 150" aria-hidden="true">
+                <defs>
+                  <linearGradient id="gem-a" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" style="stop-color:var(--color-emerald-light)"/>
+                    <stop offset=".45" style="stop-color:var(--color-emerald)"/>
+                    <stop offset="1" style="stop-color:var(--color-emerald-deep)"/>
+                  </linearGradient>
+                  <linearGradient id="gem-b" x1="1" y1="0" x2="0" y2="1">
+                    <stop offset="0" style="stop-color:var(--color-emerald)" stop-opacity=".95"/>
+                    <stop offset="1" style="stop-color:var(--color-emerald-deeper)"/>
+                  </linearGradient>
+                </defs>
+                <path d="M24 2h72l22 26v94l-22 26H24L2 122V28z" fill="url(#gem-a)"/>
+                <path d="M36 18h48l14 16v82l-14 16H36l-14-16V34z" fill="url(#gem-b)" opacity=".9"/>
+                <path d="M46 34h28l8 10v62l-8 10H46l-8-10V44z" fill="url(#gem-a)" opacity=".55"/>
+                <path d="M24 2l12 16M96 2L84 18M118 28L98 34M118 122l-20-6M96 148l-12-16M24 148l12-16M2 122l20-6M2 28l20 6" style="stroke:var(--color-emerald-light)" stroke-opacity=".5" stroke-width=".8"/>
+                <path d="M50 120h20" style="stroke:var(--color-ivory)" stroke-opacity=".6" stroke-width="1"/>
+              </svg>
+              <span class="arch__vertical" data-content="brand.tagline" aria-hidden="true"></span>
+            </div>
+          </figure>
+
+          <div class="stone-tag">
+            <span class="stone-tag__label" data-content="content.hero.stoneLabel"></span>
+            <span class="stone-tag__name" data-content="content.hero.stoneName"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__features">
+        <ul class="features-row" data-list="hero-features"></ul>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee></div>
+    </div>
+
+    <!-- ===================== MANIFIESTO ===================== -->
+    <section class="manifesto surface-ivory" aria-label="Manifiesto">
+      <div class="container manifesto__inner">
+        <p class="manifesto__lead" data-reveal data-content="content.manifesto.lead"></p>
+        <p class="manifesto__title" data-words data-content="content.manifesto.title"></p>
+      </div>
+    </section>
+
+    <!-- ===================== COLECCIONES ===================== -->
+    <section class="collections" id="colecciones" aria-labelledby="collections-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow eyebrow--emerald" data-content="content.collections.eyebrow"></p>
+          <h2 class="section-title" id="collections-title" data-content="content.collections.title"></h2>
+          <p class="section-head__text" data-content="content.collections.text"></p>
+        </header>
+      </div>
+      <!-- Las colecciones se generan desde data/categories.js -->
+      <div class="collections__grid" data-collections></div>
+    </section>
+
+    <!-- ===================== PIEZAS / CATÁLOGO ===================== -->
+    <section class="catalog surface-ivory" id="piezas" aria-labelledby="catalog-title">
+      <div class="container">
+        <header class="section-head section-head--light" data-reveal>
+          <p class="eyebrow" data-content="content.products.eyebrow"></p>
+          <h2 class="section-title" id="catalog-title" data-content="content.products.title"></h2>
+        </header>
+
+        <!-- Los filtros se generan desde data/categories.js -->
+        <div class="filters" role="group" aria-label="Filtrar por colección" data-filters></div>
+
+        <!-- Las tarjetas se generan desde data/products.js -->
+        <div class="product-grid" data-product-grid aria-live="polite"></div>
+
+        <div class="catalog__empty" data-empty hidden>
+          <p data-content="content.products.emptyText"></p>
+          <a class="link-underline" data-whatsapp data-content="content.floating.label"></a>
+        </div>
+
+        <div class="catalog__more">
+          <button class="btn btn--ghost-dark" type="button" data-load-more hidden data-content="content.products.loadMoreLabel"></button>
+        </div>
+
+        <div class="catalog__custom" data-reveal>
+          <p data-content="content.products.customText"></p>
+          <a class="link-underline" data-whatsapp data-whatsapp-message="content.products.customMessage" data-content="content.products.customCta"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ESENCIA ===================== -->
+    <section class="essence" id="esencia" aria-labelledby="essence-title">
+      <div class="container essence__grid">
+        <figure class="essence__media" data-reveal>
+          <img data-src="content.essence.image" data-alt="content.essence.imageAlt" alt="" loading="lazy" width="1000" height="1372">
+          <span class="medallion" aria-hidden="true">
+            <span class="medallion__letter">E</span>
+            <span class="medallion__year" data-content="brand.year"></span>
+          </span>
+          <span class="essence__line" aria-hidden="true"></span>
+        </figure>
+
+        <div class="essence__copy">
+          <p class="eyebrow eyebrow--emerald" data-reveal data-content="content.essence.eyebrow"></p>
+          <h2 class="section-title essence__title" id="essence-title" data-reveal data-content="content.essence.title"></h2>
+          <div class="essence__text" data-list="essence-paragraphs"></div>
+          <dl class="stats" data-list="essence-stats"></dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GARANTÍAS ===================== -->
+    <section class="guarantees" aria-label="Garantías">
+      <div class="container">
+        <p class="guarantees__est" data-reveal data-content="content.guarantees.eyebrow"></p>
+        <ul class="guarantees__grid" data-list="guarantees"></ul>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="cta" id="contacto" aria-labelledby="cta-title">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <h2 class="section-title cta__title" id="cta-title" data-reveal data-content="content.cta.title"></h2>
+        <p class="cta__text" data-reveal data-content="content.cta.text"></p>
+        <a class="btn btn--primary" data-reveal data-whatsapp data-content="content.cta.button"></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="wordmark" href="#inicio" aria-label="Emerium 1993 — volver al inicio">
+        <span class="wordmark__name" data-content="brand.name"></span>
+        <span class="wordmark__year" data-content="brand.year"></span>
+      </a>
+      <p class="site-footer__tagline" data-content="brand.tagline"></p>
+      <ul class="social" data-social></ul>
+    </div>
+    <p class="container site-footer__legal">
+      © <span data-year></span> <span data-content="brand.name"></span> <span data-content="brand.year"></span>. <span data-content="content.footer.rights"></span>
+    </p>
+  </footer>
+
+  <!-- ===================== BOTÓN FLOTANTE ===================== -->
+  <a class="floating-cta" data-whatsapp>
+    <span class="floating-cta__star" aria-hidden="true">✦</span>
+    <span class="floating-cta__label" data-content="content.floating.label"></span>
+  </a>
+
+  <noscript>
+    <p class="noscript">Activa JavaScript para ver el catálogo de Emerium 1993.</p>
+  </noscript>
+</body>
+</html>
