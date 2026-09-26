@@ -50,10 +50,12 @@
 .btn:focus-visible::before { transform: scaleX(1); transform-origin: left; }
 
 .btn--primary {
-  background: var(--color-emerald);
-  color: var(--color-bg);
+  background: var(--color-emerald-cta);
+  color: var(--color-white);
 }
 .btn--primary::before { background: var(--color-emerald-light); }
+.btn--primary:hover,
+.btn--primary:focus-visible { color: var(--color-bg); }
 
 .btn--ghost {
   border-color: rgb(244 240 231 / 0.55);
@@ -517,8 +519,8 @@
   width: clamp(88px, 70px + 3vw, 116px);
   aspect-ratio: 1;
   border-radius: 50%;
-  background: var(--color-emerald);
-  color: var(--color-bg);
+  background: var(--color-emerald-cta);
+  color: var(--color-white);
   box-shadow: 0 18px 50px -12px var(--color-emerald-glow);
   cursor: pointer;
   transition: transform var(--dur) var(--ease-out), background-color var(--dur-fast);
@@ -534,7 +536,7 @@
   border: 1px solid var(--color-emerald);
   animation: pulse 2.8s var(--ease-out) 2.6s infinite;
 }
-.floating-cta:hover { background: var(--color-emerald-light); transform: scale(1.06); }
+.floating-cta:hover { background: var(--color-emerald-light); color: var(--color-bg); transform: scale(1.06); }
 .floating-cta__star { font-size: 0.9rem; line-height: 1; }
 .floating-cta__label {
   max-width: 9ch;

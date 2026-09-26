@@ -18,6 +18,12 @@
   --color-emerald-deep:   #05603F;
   --color-emerald-deeper: #033D28;
 
+  /* ---- Botones principales ----
+     Mismo tono esmeralda, un 18% más profundo, para que el texto blanco
+     alcance contraste AA (4.5:1). Con #0CA56C el blanco solo llega a 3.2:1. */
+  --color-emerald-cta: #0A8759;
+  --color-white:       #FFFFFF;
+
   /* ---- Derivados (transparencias de la paleta) ---- */
   --color-ink:           var(--color-bg);             /* texto sobre marfil */
   --color-ink-muted:     rgb(6 16 13 / 0.62);         /* texto secundario sobre marfil */
