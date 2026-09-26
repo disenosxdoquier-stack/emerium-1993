@@ -91,15 +91,13 @@ export const site = {
 
     products: {
       eyebrow: "Selección Emerium",
-      title: "Piezas que hablan\nantes que tú",
+      title: "Piezas que hablan antes que\ntú",
       allLabel: "Todas",
       consultLabel: "Consultar",
       loadMoreLabel: "Ver más piezas",
       emptyText: "Muy pronto nuevas piezas en esta colección. Escríbenos y te mostramos opciones disponibles.",
       customText:
         "¿Buscas una pieza específica? Seleccionamos cadenas, dijes, pulseras, anillos y esmeraldas según tu estilo y presupuesto.",
-      customCta: "Solicitar una pieza",
-      customMessage: "Hola Emerium, busco una pieza específica. ¿Me pueden asesorar?",
     },
 
     essence: {

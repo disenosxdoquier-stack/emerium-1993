@@ -56,7 +56,7 @@
 .btn--primary::before { background: var(--color-emerald-light); }
 
 .btn--ghost {
-  border-color: var(--color-line-strong);
+  border-color: rgb(244 240 231 / 0.55);
   color: var(--color-ivory);
 }
 .btn--ghost::before { background: var(--color-ivory); }
@@ -203,7 +203,7 @@
   display: inline-flex;
   align-items: center;
   gap: 2.4rem;
-  padding: 1.05rem 1.2rem;
+  padding: 0.8rem 1.2rem;
   font-size: var(--fs-eyebrow);
   font-weight: 700;
   letter-spacing: var(--tracking-wide);
@@ -276,7 +276,7 @@
 
 .product-card__media {
   position: relative;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 3 / 4.5;
   overflow: hidden;
   background: var(--color-bg-2);
 }
@@ -321,7 +321,7 @@
 .product-card:hover .product-card__desc,
 .product-card:focus-within .product-card__desc { opacity: 1; transform: none; }
 @media (hover: none) {
-  .product-card__desc { opacity: 1; transform: none; }
+  .product-card__desc { display: none; }
 }
 
 .product-card__body {
@@ -385,7 +385,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: clamp(360px, 52vh, 560px);
+  min-height: clamp(380px, 64vh, 640px);
   padding: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
   overflow: hidden;
   isolation: isolate;
@@ -393,16 +393,16 @@
   background: var(--color-bg);
   cursor: pointer;
 }
-.collection-card:last-child { border-right: 0; }
+.collection-card:nth-child(2n) { border-right: 0; }
+.collection-card { border-bottom: 1px solid var(--color-line); }
 .collection-card__bg {
   position: absolute;
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(110% 60% at 20% 105%, rgb(12 165 108 / 0.42), transparent 70%),
-    radial-gradient(80% 45% at 95% 80%, rgb(184 239 207 / 0.12), transparent 70%),
-    radial-gradient(60% 35% at 70% 10%, rgb(207 177 111 / 0.06), transparent 70%),
-    linear-gradient(to bottom, var(--color-bg), var(--color-bg-2));
+    radial-gradient(120% 55% at 25% 110%, rgb(12 165 108 / 0.34), transparent 72%),
+    radial-gradient(70% 40% at 90% 95%, rgb(184 239 207 / 0.10), transparent 70%),
+    linear-gradient(to bottom, var(--color-bg) 30%, var(--color-bg-2));
   transition: transform 1.6s var(--ease-out), opacity var(--dur);
 }
 .collection-card__bg img {
@@ -412,7 +412,7 @@
   opacity: 0.55;
   mix-blend-mode: luminosity;
 }
-.collection-card__bg::after {
+.collection-card__bg:has(img)::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -468,7 +468,7 @@
 }
 .stat dd {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 1.6rem + 2vw, 3.2rem);
+  font-size: clamp(1.8rem, 1.4rem + 1vw, 2.4rem);
   line-height: 1;
   color: var(--color-ivory);
 }

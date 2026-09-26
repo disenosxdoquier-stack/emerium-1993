@@ -24,6 +24,7 @@
   --color-line:          rgb(244 240 231 / 0.12);     /* líneas sobre oscuro */
   --color-line-strong:   rgb(244 240 231 / 0.24);
   --color-line-ink:      rgb(6 16 13 / 0.14);         /* líneas sobre marfil */
+  --color-ivory-soft:    rgb(244 240 231 / 0.84);     /* párrafos largos sobre oscuro */
   --color-glass:         rgb(6 16 13 / 0.72);
   --color-emerald-glow:  rgb(12 165 108 / 0.28);
   --color-emerald-soft:  rgb(12 165 108 / 0.12);
@@ -38,9 +39,9 @@
   --fs-body:    clamp(0.95rem, 0.9rem + 0.2vw, 1.0625rem);
   --fs-lead:    clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
   --fs-h3:      clamp(1.75rem, 1.3rem + 1.6vw, 2.6rem);
-  --fs-h2:      clamp(2.4rem, 1.6rem + 3.4vw, 4.6rem);
-  --fs-h1:      clamp(2.9rem, 1.4rem + 4.6vw, 6rem);
-  --fs-display: clamp(2.6rem, 1.2rem + 6vw, 7.5rem);
+  --fs-h2:      clamp(2.2rem, 1.3rem + 2.6vw, 3.8rem);
+  --fs-h1:      clamp(2.5rem, 1.1rem + 3.2vw, 4.4rem);
+  --fs-display: clamp(2rem, 0.9rem + 3.9vw, 4.6rem);
 
   --tracking-wide:  0.24em;
   --tracking-wider: 0.32em;

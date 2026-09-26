@@ -101,6 +101,7 @@
 }
 .hero__line { display: block; }
 .hero__line--accent { color: var(--color-emerald-light); }
+.hero__eyebrow { color: var(--color-emerald-light); }
 
 .hero__text {
   max-width: 40ch;
@@ -244,15 +245,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.75rem 2rem;
-  padding: 1.4rem 0;
-  border-top: 1px solid var(--color-line);
+  padding: 1.4rem 0 1.6rem;
 }
 .features-row li {
-  font-size: var(--fs-eyebrow);
+  font-size: 0.625rem;
   font-weight: 600;
-  letter-spacing: var(--tracking-wide);
+  letter-spacing: var(--tracking-wider);
   text-transform: uppercase;
   color: var(--color-muted);
+  opacity: 0.55;
 }
 
 /* --- Entrada del hero (se activa con .is-ready en <html>) --- */
@@ -301,7 +302,7 @@
 
 /* ============================== MANIFIESTO ============================== */
 .manifesto {
-  padding-block: clamp(6rem, 4rem + 8vw, 11rem);
+  padding-block: clamp(6rem, 3rem + 11vw, 13rem);
   text-align: center;
 }
 .manifesto__inner { display: grid; justify-items: center; gap: clamp(1.25rem, 1rem + 1vw, 2rem); }
@@ -311,7 +312,7 @@
   color: var(--color-ink-muted);
 }
 .manifesto__title {
-  max-width: 18ch;
+  max-width: 100%;
   font-family: var(--font-display);
   font-size: var(--fs-display);
   line-height: 1.02;
@@ -337,14 +338,9 @@
 }
 .collections__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: clamp(2.5rem, 2rem + 2vw, 4rem);
   border-top: 1px solid var(--color-line);
-}
-@media (max-width: 1080px) and (min-width: 561px) {
-  .collections__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .collection-card:nth-child(2n) { border-right: 0; }
-  .collection-card { border-bottom: 1px solid var(--color-line); min-height: 380px; }
 }
 @media (max-width: 560px) {
   .collections__grid { grid-template-columns: minmax(0, 1fr); }
@@ -367,18 +363,12 @@
 .catalog__more { display: flex; justify-content: center; margin-top: clamp(2.5rem, 2rem + 2vw, 4rem); }
 .catalog__more:has([hidden]) { margin-top: 0; }
 .catalog__custom {
-  display: grid;
-  justify-items: center;
-  gap: 1.25rem;
   max-width: 62ch;
   margin: clamp(4rem, 3rem + 3vw, 6rem) auto 0;
-  padding-top: clamp(3rem, 2rem + 2vw, 4rem);
-  border-top: 1px solid var(--color-line-ink);
   text-align: center;
   color: var(--color-ink-muted);
   font-size: var(--fs-lead);
 }
-.catalog__custom .link-underline { color: var(--color-ink); }
 
 /* =============================== ESENCIA =============================== */
 .essence {
@@ -432,10 +422,9 @@
   gap: 1.25rem;
   max-width: 50ch;
   margin-top: clamp(1.75rem, 1.25rem + 1.5vw, 2.5rem);
-  color: var(--color-muted);
+  color: var(--color-ivory-soft);
   font-size: var(--fs-lead);
 }
-.essence__text p:first-child { color: var(--color-ivory); }
 
 @media (max-width: 900px) {
   .essence__grid { grid-template-columns: minmax(0, 1fr); }
@@ -492,7 +481,7 @@
 }
 @keyframes cta-breathe { to { transform: scale(1.15); opacity: 0.7; } }
 .cta__inner { display: grid; justify-items: center; gap: clamp(1.25rem, 1rem + 1vw, 2rem); }
-.cta__title { max-width: 20ch; text-wrap: balance; }
+.cta__title { max-width: 22ch; font-size: clamp(2.4rem, 1.2rem + 4.6vw, 5.6rem); text-wrap: balance; }
 .cta__text { max-width: 44ch; color: var(--color-muted); font-size: var(--fs-lead); }
 .cta .btn { margin-top: 0.75rem; }
 
@@ -511,7 +500,7 @@
 .site-footer__inner .wordmark { justify-self: start; }
 .site-footer__tagline {
   font-family: var(--font-display);
-  font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem);
+  font-size: clamp(1.15rem, 1rem + 0.4vw, 1.4rem);
   text-align: center;
 }
 .site-footer .social { justify-self: end; }
